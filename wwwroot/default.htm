@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Core Bot Sample</title>
+    <title>Portugal HR Bot</title>
     <style>
         body {
             margin: 0px;
@@ -37,6 +37,7 @@
             min-width: 480px;
             max-width: 1366px;
             margin-left: auto;
+            margin-top: auto;
             margin-right: auto;
             vertical-align: middle;
         }
@@ -188,8 +189,8 @@
     .ms-logo { float: right; background-image: url("data:image/png;base64,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"); }
 
         .ms-logo-container>div {
-            min-height: 240px;
-            width: 600px;
+            min-height: 140px;
+            width: 300px;
             background-repeat: no-repeat;
         }
 
@@ -252,8 +253,8 @@
 
             .ms-logo-container {
                 padding-top: 30px;
-                min-width: 480px;
-                max-width: 650px;
+                min-width: 240px;
+                max-width: 325px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -340,29 +341,39 @@
         .remove-frame-height {
             max-height: 10px;
         }
-    </style>
-    <!--<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadFrame();
-        });
-        var loadFrame = function () {
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute("id", "iframe");
-            var offLineHTMLContent = "";
-            var frameElement = document.getElementById("how-to-iframe");
-            if (window.navigator.onLine) {
-                iframe.src = 'https://docs.botframework.com/static/abs/pages/f5.htm';
-                iframe.setAttribute("scrolling", "no");
-                iframe.setAttribute("frameborder", "0");
-                iframe.setAttribute("width", "100%");
-                iframe.setAttribute("height", "100%");
-                var frameDiv = document.getElementById("how-to-iframe");
-                frameDiv.appendChild(iframe);
-            } else {
-                frameElement.classList.add("remove-frame-height");
+
+
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .myIframe {
+            position: relative;
+            padding-bottom: 65.25%;
+            padding-top: 30px;
+            margin-top: auto;
+            height: 0;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            //<<--- THIS IS THE KEY border: solid black 1px;
+        }
+
+            .myIframe iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: auto;
+                width: 40%;
+                height: 60%;
             }
-        };
-    </script>-->
+
+
+    </style>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
 </head>
 
 <body>
@@ -373,17 +384,41 @@
         </div>
     </header>
     <div class="row">
-        <div class="content-title">Welcome To Fujitsu Portugal AI Bot</div>
-        <div class="main-text main-text-p1">
-            You can Ask me the Questions about HR related queries. <br />
-            Start by clicking on bot icon
+        <div class="content-title">
+            Welcome To Fujitsu Portugal AI Bot
+            <div class="main-text main-text-p1">
+                You can Ask me the Questions about HR related queries. <br />
+                Start typing in message box
+
+
+                <div class="myIframe">
+                    <iframe src='https://webchat.botframework.com/embed/portugalbot?s=pDGYE2K6CFM.Qpo79UOd4Rv4oOXJcfoS6xkcXHZuPmuTsagyJlwn0QE'></iframe>
+
+                </div>
+            </div>
         </div>
+        <!--<div class="ms-logo-container">
+
+
+            </div>
+
+            <div class="ms-logo"></div>
+
+
+
+
+        </div>-->
+
 
 
     </div>
-    <div class="ms-logo-container">
-        <div class="ms-logo"></div>
-    </div>
-    <iframe src='https://webchat.botframework.com/embed/portugalbot?s=pDGYE2K6CFM.Qpo79UOd4Rv4oOXJcfoS6xkcXHZuPmuTsagyJlwn0QE' style='min-width: 200px; width: 40%; min-height: 250px;'></iframe>
+    <!--<div class="skype-button bubble" data-bot-id="42a29876-3f3d-4c81-9498-4e7a68a81055"></div>
+    <div class="skype-chat" data-bot-id="42a29876-3f3d-4c81-9498-4e7a68a8105"></div>-->
+   
+
+
+
+    
+
 </body>
 </html>
