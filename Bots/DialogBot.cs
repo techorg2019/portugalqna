@@ -54,18 +54,18 @@ namespace Microsoft.BotBuilderSamples.Bots
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
 
-            //Dispatcher start
-            // First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
-            var recognizerResult = await _botServices.Dispatch.RecognizeAsync(turnContext, cancellationToken);
+            ////Dispatcher start
+            //// First, we use the dispatch model to determine which cognitive service (LUIS or QnA) to use.
+            //var recognizerResult = await _botServices.Dispatch.RecognizeAsync(turnContext, cancellationToken);
 
-            // Top intent tell us which cognitive service to use.
-            var topIntent = recognizerResult.GetTopScoringIntent();
+            //// Top intent tell us which cognitive service to use.
+            //var topIntent = recognizerResult.GetTopScoringIntent();
 
-            // Next, we call the dispatcher with the top intent.
-            await DispatchToTopIntentAsync(turnContext, topIntent.intent, recognizerResult, cancellationToken);
-            //Dispatcher End
+            //// Next, we call the dispatcher with the top intent.
+            //await DispatchToTopIntentAsync(turnContext, topIntent.intent, recognizerResult, cancellationToken);
+            ////Dispatcher End
 
-
+            await ProcessSampleQnAAsync(turnContext, cancellationToken);
 
 
 

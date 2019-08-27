@@ -5,7 +5,7 @@
   "body": [
     {
       "type": "Image",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB3AwMUeNoq4gUBGe6Ocj8kyh3bXa9ZbV7u1fVKQoyKFHdkqU",
+      "url": "data:image/png;base64,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",
       "size": "stretch"
     },
     {
@@ -13,7 +13,7 @@
       "spacing": "medium",
       "size": "default",
       "weight": "bolder",
-      "text": "Welcome to AI Bot!",
+      "text": "Welcome to Fujitsu Portugal Chat Bot!",
       "wrap": true,
       "maxLines": 0
     },
@@ -21,26 +21,27 @@
       "type": "TextBlock",
       "size": "default",
       "isSubtle": "yes",
-      "text": "What can I help you with today? I can do the following task for you Start typing your query like: \"My Laptop is not working\"",
+      "text": "What can I help you with today? I can anser the questions rerlated to Fujitsu Portugal HR",
       "wrap": true,
       "maxLines": 0
     }
   ],
   "actions": [
-			{
-				"type": "Action.OpenUrl",
-				"title": "Resolve your Queries therough knowledge base",
-				"url": "#"
-			},
     {
       "type": "Action.OpenUrl",
-      "title": "Create Incident for you",
-      "url": "#"
+      "title": "Click to Open Fujitsu Portugal Official site ",
+      "url": "https://www.fujitsu.com/pt/"
+    },
+
+    {
+      "type": "Action.OpenUrl",
+      "title": "Fujitsu Services",
+      "url": "https://www.fujitsu.com/global/services/"
     },
     {
       "type": "Action.OpenUrl",
-      "title": "Check incident update for you",
-      "url": "#"
+      "title": "About Fujistu",
+      "url": "https://www.fujitsu.com/global/about/"
     }
   ]
 }
