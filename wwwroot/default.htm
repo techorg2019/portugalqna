@@ -17,7 +17,19 @@
             height: 100%;
         }
 
-    header { background-image: url(""); background-repeat: no-repeat; background-size: 100%; background-position: right; background-color: #55A0E0; width: 100%; font-size: 44px; height: 120px; color: white; padding: 30px 0 40px 0px; display: inline-block; }
+        header {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: right;
+            background-color: #FF0000;
+            width: 100%;
+            font-size: 44px;
+            height: 120px;
+            color: white;
+            padding: 30px 0 40px 0px;
+            display: inline-block;
+        }
 
     .header-icon { background-image: url(""); background-repeat: no-repeat; float: left; height: 140px; width: 140px; display: inline-block; vertical-align: middle; }
 
@@ -58,6 +70,9 @@
             font-size: 46px;
             font-weight: 300;
             line-height: 62px;
+            margin-left: auto;
+            margin-top: auto;
+            margin-right: auto;
         }
 
         .main-text {
@@ -67,11 +82,18 @@
             font-size: 24px;
             font-weight: 200;
             line-height: 32px;
+            margin-left: auto;
+            margin-top: auto;
+            margin-right: auto;
         }
 
-        .main-text-p1{
-            padding-top: 48px;
+        .main-text-p1 {
+            padding-top: 0px;
             padding-bottom: 28px;
+            margin-top: auto;
+            margin-right: auto;
+            padding-left: 13%;
+            margin-left: 4%;
         }
 
         .endpoint {
@@ -195,10 +217,10 @@
         }
 
         .row {
-            padding: 90px 0px 0 20px;
-            min-width: 480px;
-            max-width: 1366px;
-            margin-left: auto;
+            padding: 0px 0px 0 0px;
+            min-width: initial;
+            max-width: initial;
+            margin-left: 40%;
             margin-right: auto;
         }
 
@@ -383,18 +405,18 @@
             <div class="header-text" style="display: inline-block">Welcome To Fujitsu Portugal Bot</div>
         </div>
     </header>
+
+    <div class="main-text main-text-p1">
+        You can Ask me the Questions about HR related queries. <br />
+        Start typing in message box
+
+    </div>
     <div class="row">
         <div class="content-title">
-            Welcome To Fujitsu Portugal AI Bot
-            <div class="main-text main-text-p1">
-                You can Ask me the Questions about HR related queries. <br />
-                Start typing in message box
 
+            <div class="myIframe">
+                <iframe src='https://webchat.botframework.com/embed/portugalbot?s=pDGYE2K6CFM.Qpo79UOd4Rv4oOXJcfoS6xkcXHZuPmuTsagyJlwn0QE'></iframe>
 
-                <div class="myIframe">
-                    <iframe src='https://webchat.botframework.com/embed/portugalbot?s=pDGYE2K6CFM.Qpo79UOd4Rv4oOXJcfoS6xkcXHZuPmuTsagyJlwn0QE'></iframe>
-
-                </div>
             </div>
         </div>
         <!--<div class="ms-logo-container">
@@ -414,11 +436,11 @@
     </div>
     <!--<div class="skype-button bubble" data-bot-id="42a29876-3f3d-4c81-9498-4e7a68a81055"></div>
     <div class="skype-chat" data-bot-id="42a29876-3f3d-4c81-9498-4e7a68a8105"></div>-->
-   
 
 
 
-    
+
+
 
 </body>
 </html>
