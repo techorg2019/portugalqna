@@ -161,32 +161,32 @@ namespace Microsoft.BotBuilderSamples.Bots
             if (results.Any())
             {
                 //await turnContext.SendActivityAsync(MessageFactory.Text($"QnA"), cancellationToken);
-                // await turnContext.SendActivityAsync(MessageFactory.Text(results.First().Answer), cancellationToken);
+                await turnContext.SendActivityAsync(MessageFactory.Text(results.First().Answer), cancellationToken);
 
 
 
-                var answer = results.First().Answer;
-                Activity reply = ((Activity)turnContext.Activity).CreateReply();
-                string[] qnaAnswerData = answer.Split(';');
-                string title = qnaAnswerData[0];
-                string description = qnaAnswerData[1];
-                string url = qnaAnswerData[2];
-                string imageURL = qnaAnswerData[3];
-                HeroCard card = new HeroCard
-                {
-                    Title = title,
-                    Subtitle = description,
-                };
-                card.Buttons = new List<CardAction>
-    {
-        new CardAction(ActionTypes.OpenUrl, "Learn More", value: url)
-    };
-                card.Images = new List<CardImage>
-    {
-        new CardImage( url = imageURL)
-    };
-                reply.Attachments.Add(card.ToAttachment());
-                await turnContext.SendActivityAsync(reply);
+    //            var answer = results.First().Answer;
+    //            Activity reply = ((Activity)turnContext.Activity).CreateReply();
+    //            string[] qnaAnswerData = answer.Split(';');
+    //            string title = qnaAnswerData[0];
+    //            string description = qnaAnswerData[1];
+    //            string url = qnaAnswerData[2];
+    //            string imageURL = qnaAnswerData[3];
+    //            HeroCard card = new HeroCard
+    //            {
+    //                Title = title,
+    //                Subtitle = description,
+    //            };
+    //            card.Buttons = new List<CardAction>
+    //{
+    //    new CardAction(ActionTypes.OpenUrl, "Learn More", value: url)
+    //};
+    //            card.Images = new List<CardImage>
+    //{
+    //    new CardImage( url = imageURL)
+    //};
+    //            reply.Attachments.Add(card.ToAttachment());
+    //            await turnContext.SendActivityAsync(reply);
 
 
 
